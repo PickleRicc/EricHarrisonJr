@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;400;500;600;700&display=swap');
+
+
+
+:root {
+--sports-100: #141414;
+--sports-200: #b22222;
+--sports-300: #e68181;
+--sports-400: #ffffff;
+--sports-500: #4169e1;
+--sidebar-width: 240px;
+--font-base: "Bai Jamjuree", sans-serif;
+}
+
+body {
+  background-color: #141414;
+  font-family: var(--font-base);
+  color: var(--sports-400);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--sports-400);
+}
+
+a {
+  color: var(--sports-400);
+  text-decoration: none;
+  transition: all 0.3s ease; 
+}
+
+
+
+img {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--sports-200);
+  padding: 0;
+  transition: all 0.3s ease;
+}
+.navbar-nav .nav-item {
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #ffffff;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    min-height: 100vh;
+    width: var(--sidebar-width);
+    background-color: var(--sports-200);
+    background-size: cover;
+    background-position: center;
+  }
+  #content-wrapper {
+    padding-left: var(--sidebar-width);
+  }
+}
+
+
+/* Content */
+
+
+
+.full-height {
+  min-height:100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid rgba(255,255,255, 0.1);
+}
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  border-color: var(--sports-200);
+  color: #ffffff;
+}
+
+
+
+.text-brand {
+  color: var(--sports-200)
+}
+
+.link-custom {
+  font-weight: 700;
+  position:relative;
+}
+
+.link-custom::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  top: 110%;
+  background-color:red;
+  transition: all 0.3s ease;
+}
+
+.link-custom:hover::after {
+  width: 100%;
+}
+
+/* Services */
+
+.bg-base {
+  background-color: rgb(27, 27, 27);
+}
+
+.shadow-effect {
+  transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+  box-shadow: -6px 6px 0 0 var(--sports-200);
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--sports-200);
+    color: white;
+}
+
+
